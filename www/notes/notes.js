@@ -5,6 +5,11 @@ var notesforage = localforage.createInstance({
     storeName: "notes"
 });
 
+var sessionsforage = localforage.createInstance({
+    Name: "sessions",
+    storeName: "sessions"
+});
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -83,8 +88,29 @@ function deleteImage() {
 }
 
 function shareImage() {
-    document.getElementById("image-action").style.visibility = "hidden";
-    document.getElementById("background").style.visibility = "hidden";
+    sessionsforage.getItem(localStorage.getItem('current_session'))
+    .then(function(currentItem)
+    {
+        window.plugins.socialsharing.shareViaEmail(
+            document.getElementById("note").value,
+            'Notes about ' + currentItem.title,
+            null,
+            null,
+            null,
+            [document.getElementById(current_image).src],
+            onSuccess, // called when sharing worked, but also when the user cancelled sharing via email. On iOS, the callbacks' boolean result parameter is true when sharing worked, false if cancelled. On Android, this parameter is always true so it can't be used). See section "Notes about the successCallback" below.
+            onError // called when sh*t hits the fan
+        );
+        document.getElementById("image-action").style.visibility = "hidden";
+        document.getElementById("background").style.visibility = "hidden";
+    });
+}
+
+function onSuccess(success) {
+    console.log('SUCCESS');
+}
+function onError(error) {
+    console.log('ERROR');
 }
 
 function cancelAction() {
