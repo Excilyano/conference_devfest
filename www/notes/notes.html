@@ -26,8 +26,13 @@
         <div>
             <button id="take"><span class="glyphicon glyphicon-search"></span>Take picture</button>
             <button id="get">Get picture</button>
+            <button id="record-audio">Record audio</button>
+            <button id="record-video">Record video</button>
         </div>
         <div id="pics"></div>
+        <audio controls id="sounds">
+        </audio>
+        <video width="320" height="240" controls id="videos"></video>
         <div id="image-action">
             <button onclick="deleteImage()">Delete</button>
             <button onclick="shareImage()">Share</button>

@@ -28,10 +28,36 @@ var app = {
     receivedEvent: function(id) {
         document.getElementById('take').onclick = takePicture;
         document.getElementById('get').onclick = getPicture;
+        document.getElementById('record-audio').onclick = recordAudio;
+        document.getElementById('record-video').onclick = recordVideo;
     }
 };
 
 app.initialize();
+
+function recordAudio() {
+    navigator.device.capture.captureAudio(function(mediaFile){
+        source = document.createElement("source");
+        source.setAttribute("src", mediaFile[0]["fullPath"]);
+        source.setAttribute("type", mediaFile[0]["type"]);
+        console.log(source);
+        document.getElementById("sounds").appendChild(source);
+    }, function(e) {
+        console.log('Casse...');
+    })
+}
+
+function recordVideo() {
+    navigator.device.capture.captureVideo(function(mediaFile){
+        source = document.createElement("source");
+        source.setAttribute("src", mediaFile[0]["fullPath"]);
+        source.setAttribute("type", mediaFile[0]["type"]);
+        console.log(source);
+        document.getElementById("videos").appendChild(source);
+    }, function(e) {
+        console.log('Casse...');
+    })
+}
 
 function takePicture() {
     navigator.camera.getPicture(data => {
