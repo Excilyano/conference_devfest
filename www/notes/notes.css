@@ -6,3 +6,21 @@ button {
     width : 100%;
     margin-bottom: 5px;
 }
+
+#image-action {
+    visibility: hidden;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+#background {
+    visibility: hidden;;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+    z-index: 1;
+}

@@ -27,9 +27,13 @@
             <button id="take"><span class="glyphicon glyphicon-search"></span>Take picture</button>
             <button id="get">Get picture</button>
         </div>
-        <div id="pics">
-
+        <div id="pics"></div>
+        <div id="image-action">
+            <button onclick="deleteImage()">Delete</button>
+            <button onclick="shareImage()">Share</button>
+            <button onclick="cancelAction()">Cancel</button>
         </div>
+        <div id="background" onclick="cancelAction()"></div>
     </body>
     <script type="text/javascript" src="../cordova.js"></script>
 </html>

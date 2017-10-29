@@ -33,6 +33,8 @@ function takePicture() {
         var div = document.getElementById('pics');
         var image = document.createElement('img');
         image.setAttribute("src", data);
+        image.setAttribute("id", data);
+        image.setAttribute("onClick", "displayModale('"+data+"')");
         div.appendChild(image);
     }, error => {
         console.log('Error', error);
@@ -51,6 +53,8 @@ function getPicture() {
         var div = document.getElementById('pics');
         var image = document.createElement('img');
         image.setAttribute("src", data);
+        image.setAttribute("id", data);
+        image.setAttribute("onClick", "displayModale('"+data+"')");
         div.appendChild(image);
     }, error => {
         console.log('Error', error);
@@ -62,6 +66,30 @@ function getPicture() {
             targetWidth: 200
         }
     )
+}
+
+var current_image;
+
+function displayModale(image_id) {
+    current_image = image_id;
+    document.getElementById("image-action").style.visibility = "visible";
+    document.getElementById("background").style.visibility = "visible";
+}
+
+function deleteImage() {
+    document.getElementById(current_image).remove();
+    document.getElementById("image-action").style.visibility = "hidden";
+    document.getElementById("background").style.visibility = "hidden";
+}
+
+function shareImage() {
+    document.getElementById("image-action").style.visibility = "hidden";
+    document.getElementById("background").style.visibility = "hidden";
+}
+
+function cancelAction() {
+    document.getElementById("image-action").style.visibility = "hidden";
+    document.getElementById("background").style.visibility = "hidden";
 }
 
 
