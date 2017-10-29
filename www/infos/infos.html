@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="infos.css">
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <title>Informations</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top" style="background-color: rgb(224, 187, 0);">
+        <div class="container">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html">&lt;&nbsp;Back</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">About</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="app">
+        <div>
+            <label>Platform : </label>
+            <input id='platform' type="text" readonly/>
+        </div>
+        <div>
+            <label>Version : </label>
+            <input id="version" type="text" readonly/>
+        </div>
+        <div>
+            <label>UUID : </label>
+            <input id="uuid" type="text" readonly/>
+        </div>
+        <div>
+            <label>Model : </label>
+            <input id="model" type="text" readonly/>
+        </div>
+        <div>
+            <label>Connection : </label>
+            <input id="connection" type="text" readonly/>
+        </div>
+    </div>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="infos.js"></script>
+</body>
+
+</html>

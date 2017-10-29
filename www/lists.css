@@ -1,0 +1,11 @@
+.list-element {
+    border-top: solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.refresh-button {
+    width: 100%;
+}

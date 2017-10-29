@@ -1,0 +1,55 @@
+.navbar-header > .navbar-brand {
+    color : white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.navbar-nav > .active {
+    color : white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+img {
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    min-width:100%;
+    min-height:100%;
+    margin: auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size : 2em;
+    text-decoration: underline;
+}
+
+.date {
+    text-align: center;
+    font-size : 1em;
+}
+
+.menu-button {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 40px;
+}
+
+.session-button {
+    background-color: rgb(0, 167, 0);
+}
+
+.speaker-button {
+    background-color: rgb(0, 109, 160);
+}
+
+.info-button {
+    background-color: rgb(224, 187, 0);
+}
+
+
+body {
+    margin-top: 150px;
+}

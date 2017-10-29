@@ -1,0 +1,31 @@
+#name {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#biographie {
+    text-align: justify;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#presentation {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+#presentation>li {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+#save-as-contact > input, #save-as-contact > label {
+    display: inline;
+}

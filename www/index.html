@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="manifest" href="./manifest.json">
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js"></script>
+        <script src="redirect.js"></script>
+        <script src="loadsw.js"></script>
+        <script src="initDB.js"></script>
+    </head>
+    <body id='body'>
+        <nav class="navbar navbar-fixed-top" style="background-color: red;">
+            <div class="container">
+                <div class="navbar-header">
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">Conference</li>
+                </ul>
+            </div>
+        </nav>
+        <img src="img/logo.jpg">
+        <h1 class="page-title">Conference</h1>
+        <h2 class="date">19/10/2017 - 20/10/2017</h2>
+
+        <button class="menu-button session-button" onclick="goToView('session/sessions.html')">See sessions</button>
+        <button class="menu-button speaker-button" onclick="goToView('speaker/speakers.html')">See speakers</button>
+        <button class="menu-button info-button" onclick="goToView('infos/infos.html')">About your phone</button>
+    </body>
+</html>

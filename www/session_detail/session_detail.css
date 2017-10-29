@@ -1,0 +1,31 @@
+#title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#description {
+    text-align: justify;
+}
+
+#spk_title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#speakers {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+#speakers>li {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+}

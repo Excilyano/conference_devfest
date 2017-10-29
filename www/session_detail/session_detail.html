@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../global.css">
+        <link rel="stylesheet" type="text/css" href="session_detail.css">
+        <script src="https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js"></script>
+        <script src="../redirect.js"></script>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    </head>
+    <body id='body'>
+        <nav class="navbar navbar-fixed-top" style="background-color: rgb(0, 167, 0);">
+            <div class="container">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="../session/sessions.html">&lt;&nbsp;Back</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">Sessions</li>
+                </ul>
+            </div>
+        </nav>
+        <h4 id='title'></h1>
+        <p id='description'></p>
+        <h5 id='spk_title'></h4>
+        <ul id='speakers'></ul>
+        <button onclick="goToView('../notes/notes.html')">Mes notes</button>
+        <script src="session_detail.js"></script>
+    </body>
+</html>
