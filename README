@@ -1,0 +1,21 @@
+conference_devfest est une Progressive Web App développée pour visualiser les conférences présentées au devfest 2017 ainsi que leurs présentateurs.
+
+Les fonctionnalités suivantes ont été implémentées :
+ * Accès à l'application hors-ligne
+ * Consultation des sessions et des speakers
+ * Consultation des informations du téléphone
+ * Consultation du détail des sessions et des speakers
+ * Rédaction et enregistrement d'une "note" sous forme de texte pour une session
+ * Importation d'image dans la note
+ * Importation de son dans la note
+ * Importation de vidéo dans la note
+ * Suppression d'une image de la note
+ * Partage d'une note avec image, titre de la session et contenu de la note
+
+
+Les fonctionnalités suivantes ont été mises en place mais ne fonctionnent pas :
+ * Ajout du présentateur dans les contacts du téléphone
+
+
+Les fonctionnalités suivantes n'ont pas été implémentées :
+ * Enregistrement des images, des sons et des vidéos dans la note
